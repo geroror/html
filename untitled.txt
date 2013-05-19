@@ -1,3 +1,4 @@
 git hub test01 0:10
 git hub test02 @mac 0:16
 git hub test02 @win7 0:20
+git hub test04 @mac 0:23
