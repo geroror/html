@@ -1,1 +1,2 @@
-﻿git hub test01 0:10
+git hub test01 0:10
+git hub test02 @mac 0:16
