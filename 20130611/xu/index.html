@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> LCUKSUNG HR SYSTEM</title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="xubin">
+  <meta name="Keywords" content="hr,crm,enterprise">
+  <meta name="Description" content="">
+  <meta charset="UTF-8">
+ </head>
+
+	<!--使用 frameset 框架 不可以使用 BODY 标签 和其他的任何字符内容 -->
+	<frameset rows="5%,20%,70%,5%" frameborder="1" border="8px" bordercolor="green" >
+
+			<!--头部内容--><!--name 作用给每个frame起个名字-->
+			<frame src="header.html" name="header" noresize scrolling="no" />
+			
+			
+			<!--导航菜单内容-->
+			<frameset cols="20%,80%">
+						<frame src="leftnavi.html" name="leftnavi"/>
+						<frame src="mainnavi.html" name="miannavi"/>
+			</frameset>
+			
+			
+			<!--主体内容-->
+			<frameset cols="20%,80%">
+						<frame src="leftmenu1.html" name="leftmenu1" scrolling="yes" />
+						<frame src="main1.html" name="main1"/>
+			</frameset>
+			
+			
+			<!--底部内容-->
+			<frame src="footer.html" name="footer"/>
+	</frameset>
+
+</html>
