@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta charset="UTF-8">
+ </head>
+
+ <body>
+		<form name="form" action="abcd.php" method="post">
+			<div class="contactus">
+				<h3>联系我们!</h3>
+				
+				<!--用户基本信息-->
+				<div class="basic_info">
+					<fieldset>
+						<legend>基本信息</legend>
+						 <table>
+							<tr>
+								<th>姓名:</th>
+								<td><input type="textarea" size="10px" maxlength="10" name="yourname" title="输入您的姓名"/></td>
+							</tr>
+							<tr>
+								<th>工号:</th>
+								<td><input type="textarea" size="10px" maxlength="8" name="worknumber" title="输入您的工号 "/></td>
+							</tr>
+							<tr>
+								<th>性别:</th>
+								<td><input type="radio" name="sex" size="10px" value="femail" title="男"/>男
+								<input type="radio" name="sex" size="10px" value="mail" title="女"/>女
+								<input type="radio" name="sex" size="10px" value="femail" title="不知道" checked="checked" />不知道</td>
+							</tr>
+							<tr>
+								<th>年龄:</th>
+								<td><input type="text" maxlength="2" size="2px" name="age" value="20" /></td>
+							</tr>
+						 </table>
+
+					</fieldset>
+				</div>
+
+				<!--用户其他信息-->
+				<div class="other_info">
+					<fieldset>
+						<legend>其他信息</legend>
+							<table>
+								<tr>
+									<th>部门:</th>
+									<td>
+									<input type="checkbox" name="department" value="dev" checked="checked"/>开发部 
+									<input type="checkbox" name="department" value="kanri" />管理部
+									<input type="checkbox" name="department" value="market" />市场部
+									</td>
+								</tr>
+								<tr>
+									<th>籍贯:</th>
+									<td>
+										<select name="bornarea" id="born">
+											<option value="beijin">北京</option>
+											<option value="shanghai">上海</option>
+											<option value="guangzhou">广州</option>
+										</select>
+								</tr>
+								<tr>
+									</td>
+									<th>地址:</th>
+									<td><input type="text" size="40px" name="bornaddress" />				
+									</td>								
+								</tr>
+								
+								<tr>
+									<th>住址:</th>
+									<td>
+										<select name="livearea" id="live">
+											<optgroup label="北上广">
+												<option value="beijin">北京</option>
+												<option value="shanghai">上海</option>
+												<option value="guangzhou">广州</option>
+											</optgroup>
+											<optgroup label="其他">
+												<option value="sichuan">四川</option>
+												<option value="hangzhou">杭州</option>
+												<option value="dalian">大连</option>
+											</optgroup>
+										</select>
+
+										<select name="livearea2" id="live2">
+											<option value="haidian">海淀区</option>
+											<option value="zhongguangcun">中关村</option>
+											<option value="qita">其他区</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>详细:</th>
+									<td><input type="text" size="40px" name="detailaddress" /></td>
+								</tr>
+
+								<tr>
+									<th>手机:</th>
+									<td><input type="text" maxlength="11" size="8px" name="mobile" value=""></td>
+								</tr>
+								<tr>
+									<th>电话:</th>
+									<td>
+									<input type="text" maxlength="3" size="1px" name="areatel" value="021">
+									<input type="text" maxlength="8" size="5px" name="tel" value="">
+									</td>
+								</tr>
+
+								<tr>
+									<th>照片:</th>
+									<td><input type="file" name="picture" value="pics" /></td>
+								</tr>
+							</table>
+					</fieldset>
+				</div>
+
+				<div class="form_message">
+					<fieldset>
+						<legend>留言和反馈</legend>
+						<table>
+							<th>内容:</th>
+							<td><textarea name="formmessage" rows="3" col="30"></textarea></td>
+						</table>
+					</fieldset>
+				</div>
+				
+		
+		</form>
+ </body>
+</html>
