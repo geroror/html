@@ -1,35 +1,97 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
-  <title> New Document </title>
+  <title>LOGIN</title>
   <meta name="Generator" content="EditPlus">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
  </head>
-
- <body>
-	<div class="login">
-		<table>
-			<form action="login.php" name="login" method="get">
-				
-					<tr>
-						<th>用户名:</th>
-						<td><input type="text" size="10" maxlength="8" name="username" title="请输入用户名" /></td>
-					</tr>
-					<tr>
-						<th>密码:</th>
-						<td><input type="password" size="10" maxlength="8" name="password" title="请输入密码" /></td>
-					</tr>
-				</table>
 		
+ <body class="login_mainbody">
+
+	<div class="login_header">
+		1234
+	</div>
+	
+	<div class="login_body">
+		<table class="login_tbody">
+			<form action="login.php" name="login" method="get">
+					
+					<!--快捷键可使用 label for="id" accesskey="x" 的方式实现-->
+
+					<tr class="a1234">
+						<th colspan="3" ><span>LOGIN</span></th>
+					</tr>
 					<tr>
-						<td><input type="submit" name="submit" value="确认"/></td>
-						<td><input type="reset" name="reset" value="重置"/></td>
+						<th>用户名:(U)</th>
+						<td><input type="text" size="10" maxlength="8" name="username" id="username" value="20xx0xxx" title="请输入用户名" />
+						<label for="username" accesskey="u" </label></td>
+					</tr>
+					<tr>
+						<th>&nbsp;&nbsp;密码:(P)</th>
+						<td><input type="password" size="10" maxlength="8" name="password" id="password" value="password" title="请输入密码" />
+						<label for="password" accesskey="p"></label></td>
+					</tr>
+						
+					<tr>
+						<td><input type="submit" name="submit" id="submit" value="确认 (S)"/><label for="submit" accesskey="s" ></label></td>
+						<td><input type="reset" name="reset" id="reset" value="重置  (R)"/><label for="reset" accesskey="r"></label></td>
+						<td><input type="button" name="clear" id="clear" value="清除  (C)" onclick="document.login.username.value=''"/><label for="clear" accesskey="c"></label></td>
+					</tr>
+
+
+					<tr>
+						<td><input type="hidden" name="hidden" value="192.168.1.1"/></td>
 					</tr>
 			</form>
 		</table>
 	</div>
+
+	<div class="login_footer">
+			
+		<div class="login_footer_container">
+			<h4>Product and Services</h4>
+			<p>Home</p> 
+			<p>Features</p>  
+			<p>Plans & Pricing</p>  
+			<p>Sign Up</p>  
+			<p>Compare Editions</p>  
+			<p>Open source</p> 
+			
+		</div>	
+
+
+		<div class="login_footer_container">
+			<h4>Support</h4>
+			<p>Help & Support</p>  
+			<p>Support Tickets</p>  
+			<p>Forum</p>  
+			<p>Wiki</p>  
+			<p>Downloads</p> 	
+		</div>
+
+		<div class="login_footer_container">
+			
+			<h4>The Company</h4>
+			<p>About Us</p>  
+			<p>Blog</p>  
+			<p>Our Clients</p>  
+			<p>Contact us</p> 
+
+		
+		</div>
+
+		<div class="login_footer_aboutus">
+		 <h4>&copy; 上海英特尔信息系统有限公司 </h4>
+		 <p>使用条款 *商标 隐私条款 Cookie</p>  
+		 <p>英特尔公司沪 ICP 备 09028403 号</p>  
+		</div>
+	</div>
+
+
  </body>
 </html>

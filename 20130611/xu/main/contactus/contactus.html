@@ -74,6 +74,7 @@
 								<tr>
 									<th>住址:</th>
 									<td>
+										<!--分组下拉 单选-->
 										<select name="livearea" id="live">
 											<optgroup label="北上广">
 												<option value="beijin">北京</option>
@@ -86,8 +87,9 @@
 												<option value="dalian">大连</option>
 											</optgroup>
 										</select>
-
-										<select name="livearea2" id="live2">
+										
+										<!--可复选的下拉框-->
+										<select name="livearea2" id="live2" multiple>
 											<option value="haidian">海淀区</option>
 											<option value="zhongguangcun">中关村</option>
 											<option value="qita">其他区</option>
@@ -113,6 +115,7 @@
 
 								<tr>
 									<th>照片:</th>
+									<!--文件上传 a:必须使用 post 方法 b:加属性 enctype="multipart/form-data"-->
 									<td><input type="file" name="picture" value="pics" /></td>
 								</tr>
 							</table>
